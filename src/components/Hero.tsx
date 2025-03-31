@@ -1,5 +1,6 @@
 import React from 'react';
 import { ChevronDown } from 'lucide-react';
+import gkatImage from '../images/gkat.jpg'; // Import the image
 
 const Hero = () => {
   return (
@@ -7,12 +8,12 @@ const Hero = () => {
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: 'url("https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80")',
+          backgroundImage: `url(${gkatImage})`, // Use imported image
         }}
       >
         <div className="absolute inset-0 bg-black bg-opacity-50"></div>
       </div>
-      
+
       <div className="relative h-full flex items-center justify-center text-center">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
